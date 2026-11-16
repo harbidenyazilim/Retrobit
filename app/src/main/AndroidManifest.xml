@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <uses-feature android:name="android.hardware.gamepad" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+
+    <queries>
+        <package android:name="com.retroarch" />
+        <package android:name="com.retroarch.aarch64" />
+        <package android:name="org.ppsspp.ppsspp" />
+        <package android:name="org.ppsspp.ppssppgold" />
+        <package android:name="com.dsemu.drastic" />
+        <package android:name="me.magnum.melonds" />
+        <package android:name="org.mupen64plusae.v3.fz" />
+        <package android:name="com.github.stenzek.duckstation" />
+        <package android:name="com.explusalpha.Snes9x" />
+        <package android:name="com.explusalpha.GbaEmu" />
+        <package android:name="com.explusalpha.NesEmu" />
+        <package android:name="com.explusalpha.MdEmu" />
+        <package android:name="com.fastemulator.gba" />
+        <package android:name="com.fastemulator.gbc" />
+        <package android:name="com.johnemulators.johngbac" />
+        <package android:name="com.johnemulators.johnnes" />
+        <package android:name="com.johnemulators.johnsnes" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".RetrobitApplication"
+        android:allowBackup="false"
+        android:banner="@drawable/tv_banner"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Retrobit.Starting"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:banner="@drawable/tv_banner"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Retrobit.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" android:mimeType="application/x-nes-rom" />
+                <data android:scheme="content" android:mimeType="application/x-snes-rom" />
+                <data android:scheme="content" android:mimeType="application/x-gameboy-rom" />
+                <data android:scheme="content" android:mimeType="application/x-gba-rom" />
+                <data android:scheme="content" android:mimeType="application/x-n64-rom" />
+                <data android:scheme="content" android:mimeType="application/x-genesis-rom" />
+                <data android:scheme="content" android:mimeType="application/x-psx-rom" />
+                <data android:scheme="content" android:mimeType="application/x-nintendo-ds-rom" />
+                <data android:scheme="content" android:mimeType="application/zip" />
+                <data android:scheme="content" android:mimeType="application/octet-stream" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" android:mimeType="application/x-nes-rom" />
+                <data android:scheme="file" android:mimeType="application/x-snes-rom" />
+                <data android:scheme="file" android:mimeType="application/x-gameboy-rom" />
+                <data android:scheme="file" android:mimeType="application/x-gba-rom" />
+                <data android:scheme="file" android:mimeType="application/x-n64-rom" />
+                <data android:scheme="file" android:mimeType="application/x-genesis-rom" />
+                <data android:scheme="file" android:mimeType="application/x-psx-rom" />
+                <data android:scheme="file" android:mimeType="application/x-nintendo-ds-rom" />
+                <data android:scheme="file" android:mimeType="application/zip" />
+                <data android:scheme="file" android:mimeType="application/octet-stream" />
+            </intent-filter>
+
+            <!-- Share-to-import works on TVs without a system folder picker. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/x-nes-rom" />
+                <data android:mimeType="application/x-snes-rom" />
+                <data android:mimeType="application/x-gameboy-rom" />
+                <data android:mimeType="application/x-gba-rom" />
+                <data android:mimeType="application/x-n64-rom" />
+                <data android:mimeType="application/x-genesis-rom" />
+                <data android:mimeType="application/x-psx-rom" />
+                <data android:mimeType="application/x-nintendo-ds-rom" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/x-nes-rom" />
+                <data android:mimeType="application/x-snes-rom" />
+                <data android:mimeType="application/x-gameboy-rom" />
+                <data android:mimeType="application/x-gba-rom" />
+                <data android:mimeType="application/x-n64-rom" />
+                <data android:mimeType="application/x-genesis-rom" />
+                <data android:mimeType="application/x-psx-rom" />
+                <data android:mimeType="application/x-nintendo-ds-rom" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.screens.GamepadTestActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Retrobit" />
+
+        <activity
+            android:name=".ui.player.RetroPlayerActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|uiMode|density"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.Retrobit" />
+
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

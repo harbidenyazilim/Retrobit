@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original cartridge-console/joystick silhouette; no manufacturer emblem or external art. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1280dp" android:height="731dp"
+    android:viewportWidth="1280" android:viewportHeight="731">
+    <group android:translateX="730" android:translateY="354">
+        <path android:fillColor="#090807" android:fillAlpha="0.7"
+            android:pathData="M-24,231L426,231L460,250L10,250Z" />
+        <path android:fillColor="#292725" android:strokeColor="#625445" android:strokeWidth="2"
+            android:pathData="M32,94L340,94L404,162L-14,162Z" />
+        <path android:fillColor="#141413" android:pathData="M-14,162H404V219L-14,219Z" />
+        <path android:fillColor="#704A30" android:pathData="M-10,183H400V214H-10Z" />
+        <path android:fillColor="#00000000" android:strokeColor="#AD784A"
+            android:strokeAlpha="0.5" android:strokeWidth="1.5"
+            android:pathData="M-8,188C70,181 134,200 225,188S350,185 398,190 M-8,197C100,207 150,189 247,199S350,202 398,195 M-8,209C80,200 160,217 275,207S370,205 398,209" />
+        <path android:fillColor="#0B0B0B"
+            android:pathData="M65,105H72L45,151H38Z M85,105H92L65,151H58Z M105,105H112L85,151H78Z M125,105H132L105,151H98Z M145,105H152L125,151H118Z M245,105H252L279,151H272Z M265,105H272L299,151H292Z M285,105H292L319,151H312Z" />
+        <path android:fillColor="#050505" android:pathData="M160,110H226V127H160Z" />
+        <path android:fillColor="#3A3530" android:strokeColor="#73624F" android:strokeWidth="2"
+            android:pathData="M172,62H212V118H172Z" />
+        <path android:fillColor="#B68656" android:fillAlpha="0.7"
+            android:pathData="M180,70H204V90H180Z" />
+        <path android:fillColor="#C6B9A5"
+            android:pathData="M24,166H30V176H24Z M52,166H58V176H52Z M340,166H346V176H340Z M368,166H374V176H368Z" />
+        <path android:fillColor="#D58A43" android:fillAlpha="0.7"
+            android:pathData="M161,169H225V172H161Z" />
+        <path android:fillColor="#0A0908" android:pathData="M10,219H54V228H10Z M340,219H384V228H340Z" />
+        <path android:fillColor="#00000000" android:strokeColor="#494038" android:strokeWidth="3"
+            android:pathData="M326,222C430,246 434,177 454,156" />
+        <path android:fillColor="#1D1B19" android:strokeColor="#65523F" android:strokeWidth="2"
+            android:pathData="M406,148L486,148L503,172L393,172Z" />
+        <path android:fillColor="#10100F" android:pathData="M393,172H503V190H393Z M437,103H450V153H437Z" />
+        <path android:fillColor="#35302A" android:strokeColor="#65523F" android:strokeWidth="2"
+            android:pathData="M430,92Q444,83 457,92V109Q444,116 430,109Z" />
+        <path android:fillColor="#B6653A" android:pathData="M409,154H421V163H409Z" />
+    </group>
+</vector>

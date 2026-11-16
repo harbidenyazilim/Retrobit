@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_genre_action_adventure">Action-adventure</string>
+    <string name="game_genre_jrpg">Japanese RPG</string>
+    <string name="game_genre_shoot_em_up">Shoot ’em up</string>
+</resources>

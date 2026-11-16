@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original amber scan horizon and quiet woodgrain; shared by hero and carousel art. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <vector android:width="1280dp" android:height="731dp"
+            android:viewportWidth="1280" android:viewportHeight="731">
+            <path android:fillColor="#17120F" android:pathData="M0,0H1280V731H0Z" />
+            <path android:fillColor="#261B14" android:pathData="M540,0H1280V430H540Z" />
+            <path android:fillColor="#342318" android:pathData="M660,240H1280V430H660Z" />
+            <path android:fillColor="#493020" android:pathData="M760,340H1280V430H760Z" />
+            <path android:fillColor="#D58A43" android:fillAlpha="0.55"
+                android:pathData="M480,430H1280V433H480Z" />
+            <path android:fillColor="#704A30" android:fillAlpha="0.38"
+                android:pathData="M570,452H1280V454H570Z M630,480H1280V482H630Z M700,518H1280V520H700Z M740,568H1280V570H740Z" />
+            <path android:fillColor="#211810" android:pathData="M0,590H1280V731H0Z" />
+            <path android:fillColor="#00000000" android:strokeColor="#704A30"
+                android:strokeAlpha="0.25" android:strokeWidth="2"
+                android:pathData="M0,622C190,609 235,646 470,626S800,601 1280,624 M0,644C230,661 340,620 600,650S960,671 1280,642 M0,675C260,650 360,700 680,678S1030,662 1280,686 M0,708C210,729 420,688 720,713S1060,703 1280,710" />
+            <path android:fillColor="#D58A43" android:fillAlpha="0.18"
+                android:pathData="M790,274H798V282H790Z M1080,198H1086V204H1080Z M1190,318H1196V324H1190Z" />
+        </vector>
+    </item>
+    <item android:drawable="@drawable/illustration_atari2600" />
+</layer-list>

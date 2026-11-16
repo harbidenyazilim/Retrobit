@@ -1,0 +1,13 @@
+Retrobit Android components
+
+The application uses these third-party libraries at runtime:
+
+- AndroidX Core, AppCompat, Activity, Lifecycle, Navigation, DataStore, DocumentFile, Compose UI/Foundation/Material — Apache-2.0 — https://github.com/androidx/androidx
+- Coil 2.7.0 — Apache-2.0 — https://github.com/coil-kt/coil
+- OkHttp 4.12.0 — Apache-2.0 — https://github.com/square/okhttp
+- Apache Commons Compress 1.26.2 — Apache-2.0 — https://github.com/apache/commons-compress
+- Kotlin standard library, coroutines, and serialization — Apache-2.0 — https://github.com/JetBrains/kotlin and https://github.com/Kotlin/kotlinx.coroutines and https://github.com/Kotlin/kotlinx.serialization
+- XZ for Java 1.9 — public domain — https://tukaani.org/xz/java.html
+- Google Play Billing 9.1.0 — Google Play SDK terms — https://developer.android.com/google/play/billing
+
+The Apache License 2.0 text is included as Apache-2.0.txt. Font licenses are provided in their individual OFL files in this directory.

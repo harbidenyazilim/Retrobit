@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="player_startup_prompt">How would you like to start? A confirms; B cancels.</string>
+    <string name="player_startup_resume">Resume last progress</string>
+    <string name="player_startup_fresh">Start fresh (keep in-game saves)</string>
+    <string name="player_startup_fresh_desc">Boot without restoring a snapshot. Battery / in-game saves (SRAM) and every manual save slot are kept. Nothing is deleted.</string>
+    <string name="player_startup_empty">No saved snapshot or in-game save is available to resume.</string>
+    <string name="player_startup_restore_failed">Saved progress could not be restored. The game is stopped and recovery / in-game saves will not be overwritten. Retry, start fresh, or cancel. If in-game save data cannot be read, retry or cancel.</string>
+    <string name="player_startup_retry">Retry saved progress</string>
+    <string name="player_gamepad_edit">Controller layout and buttons</string>
+    <string name="player_gamepad_scope_hint">Edit a draft, then save. Face swaps use Custom layout; shoulder swaps work with every layout. Menu A / B and physical menu shortcuts never change.</string>
+    <string name="player_gamepad_global_hint">Global default buttons. Face swaps use Custom layout; L1 / R1 and L2 / R2 swaps work with every layout. Game and console overrides take priority.</string>
+    <string name="player_gamepad_swap_on">%1$s · swapped</string>
+    <string name="player_gamepad_swap_off">%1$s · normal (swap)</string>
+    <string name="player_gamepad_reset_swaps">Reset button swaps</string>
+    <string name="player_gamepad_touch_hint">Touch buttons send the RetroPad button printed on them; physical controller swaps do not change touch controls.</string>
+    <string name="player_gamepad_save">Save buttons</string>
+    <string name="player_gamepad_save_game">Save for this game</string>
+    <string name="player_gamepad_apply_console">Apply to all games on THIS console: %1$s</string>
+    <string name="player_gamepad_save_failed">Controller settings could not be saved. Your draft is still here; retry or cancel.</string>
+</resources>

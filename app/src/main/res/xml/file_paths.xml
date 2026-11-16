@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="roms" path="roms/" />
+    <files-path name="covers" path="covers/" />
+    <external-files-path name="external_roms" path="roms/" />
+    <cache-path name="showcase" path="showcase/" />
+</paths>

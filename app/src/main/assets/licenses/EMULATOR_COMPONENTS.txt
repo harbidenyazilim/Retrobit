@@ -1,0 +1,101 @@
+Retrobit emulator components
+
+Retrobit distributes the following third-party emulator components. ROMs, BIOS files, firmware, game artwork, and commercial game content are not included.
+
+Runtime / frontend bridge
+- LibretroDroid 0.14.0
+  License: GPL-3.0
+  License text: GPL-3.0.txt
+  Upstream: https://github.com/Swordfish90/LibretroDroid
+  Source tag: 0.14.0
+  Tag commit: 8835c3098514390a271e36983957f7bb5f40abf1
+
+Bundled libretro cores
+- FCEUmm — GPL-2.0 — https://github.com/libretro/libretro-fceumm
+- bsnes-mercury Performance — GPL-3.0 — https://github.com/libretro/bsnes-mercury
+- Mupen64Plus-Next — GPL-2.0 — https://github.com/libretro/mupen64plus-libretro-nx
+- Gambatte — GPL-2.0 — https://github.com/libretro/gambatte-libretro
+- mGBA — MPL-2.0 — https://github.com/mgba-emu/mgba
+- melonDS — GPL-3.0 — https://github.com/libretro/melonDS
+- PicoDrive — GPL-2.0 — https://github.com/libretro/picodrive
+- Gearsystem — GPL-3.0 — https://github.com/drhelius/Gearsystem
+- PCSX-ReARMed — GPL-2.0 — https://github.com/libretro/pcsx_rearmed
+- PPSSPP — GPL-2.0 — https://github.com/hrydgard/ppsspp
+- Stella — GPL-2.0 — https://github.com/stella-emu/stella
+
+Corresponding license texts are included as GPL-2.0.txt, GPL-3.0.txt, and MPL-2.0.txt.
+
+Binary provenance
+All bundled cores were built locally for arm64-v8a, armeabi-v7a, x86, and x86_64 with Android NDK 28.0.13004108 from the exact revisions below. Recursive submodules at those revisions form part of the corresponding source.
+
+- PicoDrive — 1890c2932234c9d30f4cd3851d02228baae8f09e
+  arm64-v8a d523f816659169941cd25bce4344c83f2cd58b5bad45e5fb3e278e7eef764082
+  armeabi-v7a 074b481b5c3a3890a3b817bfb28508c7c98011f714890067f70e52edcddae1ce
+  x86 240c19dc9c7d363838fd00eee70985e52764a6696c7f7f6186555848b8732210
+  x86_64 5f05e85c78a30dd9c369d545b254a4170bc89faac069cbf09369ba735c2e5116
+
+- FCEUmm — 8997c2bf9503f6d50585b11a1fd7207af53a2426
+  arm64-v8a 7dd0bce9d3e6a25b9356484266a2d52521d5990880b90649518a7ba7a22552f9
+  armeabi-v7a 80b3312543fed317820a5a8cada6a104d1bec22aaa722f9f497d0a41f67ebd5c
+  x86 4cf95a6956c630de677aa1e5330f1397967909a7fdaea1cc238954ae4418e1fa
+  x86_64 f538ec8dbbf903f7f432bffbe589a1770cb3eff711a83ca5e2b88507511d6060
+
+- bsnes-mercury Performance — 79d7f9de218b6ffa65a80bbdc5828532bc239232
+  arm64-v8a 54131794be5f366c729d44fa2f025831029f1b26d3e623d8d4029eef4e04ff22
+  armeabi-v7a 6bd377dbc25116ed1b111a36386c9c5614f99bd3a084d0b0d0b986ffe8c7d7cc
+  x86 0f0412d0f22998c3e50c69538b8c1b3d9c024c289328e47521e273bb8e40289a
+  x86_64 9faa0a363cf7708ff166457025bd3755b57b58958fdb95dc378322c45d25d1eb
+
+- Mupen64Plus-Next — 15bada85906593376e8fd697f1b0b3af3a20f512
+  arm64-v8a 5cfa10486ba6342bb1662818a19bac6c73e1ad114adb51b042fac569fc0ef0c9
+  armeabi-v7a f1d238f38f4ec4204ba23ed9294039095b4b73b9d581c120994a300888ae453e
+  x86 97ffbf27b6c9684c237679e304b02f1beca79f2cdac006c47a6152b6a85ec0de
+  x86_64 2fdacf962861b57e131b630a5ea2e50baf2ceb5abaae564dad9934b75a0e0522
+
+- Gambatte — 77f2567d718b8973d02caa2daa8dce4953faf811
+  arm64-v8a 1dea63dd7a5ca8bb2abb930d13b308d43bf31cec75c3c0783ef4567d798463ae
+  armeabi-v7a aee9036db0405a2a1aa8fc8fbd1017d434d3d158b2f1dbde87f0c89148f4d0c0
+  x86 7d6af4c9450a4ec15c34ad8ccce6a73ea05aa908ba688057641a69079c2368cd
+  x86_64 b559a80d13d593b00d0688d907ac9256dfdaead729a42b99b15f9a1a5195e3e4
+
+- mGBA — 6c062d1407aa4bfec3235cebb12d229abf781779
+  arm64-v8a 39cdf246ea47446cba647b4d5c454df5af1635fcdae7a94219bc02d677af963f
+  armeabi-v7a 94656d09f85288360bde1b9c4477b912392abf0b258c897aed82f48e038fd433
+  x86 6ed7913d4d785154988009770059561aa1353113d80070ff17dbb33ce29faecf
+  x86_64 63324ade5b5fab1fae27ec25f7df0b213f564a2d6917b9badbf9f05d0a9db4bf
+
+- melonDS — 4081e8358e66f1ea11879560be6b813dfeaab75a
+  arm64-v8a 04888db9133ccd6b2524362a4c0ba5e9d69dd6bdd8bb7bdf7a3092df553cbbaf
+  armeabi-v7a 55a6a890ee049c1bfbc697b25aaf692cb87fb8774a1d92eae8e55965ca7d1eac
+  x86 faf16a7720b724f30dbaa1232d33a3d12db4452db02750316b3a5b11a08ff029
+  x86_64 b161b4f78f6c81e010de89895606c7bc503a0594633bfe078bfeaff7375c711a
+
+- Gearsystem — f61994f36f443d338f8660b6ff210ad1ea84054a
+  arm64-v8a 91822078753e0c04d3bd7dacfef10b5b26bd9615dc18d78248595c0ff508c509
+  armeabi-v7a 4ca56df0d4d76df307d52670727e8e44de4119d6c2ca19300ae68919b3aa84ba
+  x86 d0c959d59b628de0254ae94b94026d3b23e83720063a11c53ae8f934a1bbcbca
+  x86_64 4582e2b84a42353ce2ca23df4d67212715fa05b04f68cc0e4240074de7aa447d
+
+- PCSX-ReARMed — 7b0e8f8fadfbce3d170d195b9d9eecaabfa08c8e
+  arm64-v8a 6d82374b40d33c03857e8bf9b61db6cf35ad67db84f36a7a77e61047dcbadc04
+  armeabi-v7a da3b210844d7f1c369c4dec0e984299480c0848057438b13157924eee70026a1
+  x86 71d276a2a047fef4a9382779bcfd0f677cd4f3beab30af4dbb9a0f45e673bc60
+  x86_64 5faaa0302cc15e2b1315c45241b6ae5f4ab999579633b58770f1af80ae4a8d17
+
+- PPSSPP — 65181eea1deb7361beb3be6062ea98e8427f2786
+  arm64-v8a c0d076eaeebe1d73f285ec1ff544286489e42f1cfba53e7c024334ea57d27a11
+  armeabi-v7a 1014427a800a7c171b56d934418d98d9e2dcefc4b835b2a2b4ed893208aeabac
+  x86 6a0f4dc574cdac857a5c421dbbcf8c1f76d0edab813b6154b6f1643ad4280a82
+  x86_64 4bf38c72ebd812b4d0a87a6b174bbc3997fab44639c0d30aa55cba21d5f1e98f
+
+- Stella — da5a002c318843bea1d233932508b9439798de0d
+  arm64-v8a 47fd4d3220143203722ec336a22a18e5f6b14310e5b2ab97eef1b46a24f02bb0
+  armeabi-v7a c3e51217d83228131da717aa763bc531293a258fe2a68cad07581db2b7f55cbc
+  x86 5076e413b3cf058e9d8479b231cbe20acc8907b6812e0d70ee15a74b9ed256f5
+  x86_64 30817e2b0e2c20d7ce2044fcb91a5369d64b0b938639e2a0b02031be80b841ba
+
+Build adjustments retained in the corresponding source:
+- melonDS: treat an empty JIT_ARCH value as disabled.
+- PPSSPP: compile the libpng ARM NEON initialization and filter sources for ARM64; build with RTTI and exceptions enabled.
+- Stella: use strtof/strtod with full-input and errno checks because the selected NDK libc++ does not provide floating-point from_chars.
+- Mupen64Plus-Next: generate ABI-specific assembler offset headers from each NDK-built asm_defines object before assembling the dynarec sources.

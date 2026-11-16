@@ -1,0 +1,13 @@
+diff --git a/libretro/Makefile.common b/libretro/Makefile.common
+index 7ce949c947..2f904c7157 100644
+--- a/libretro/Makefile.common
++++ b/libretro/Makefile.common
+@@ -989,6 +989,8 @@ ifeq ($(WITH_DYNAREC),1)
+ 		     $(COREDIR)/MIPS/ARM64/Arm64IRRegCache.cpp \
+ 		     $(COREDIR)/Util/DisArm64.cpp \
+ 		     $(GPUCOMMONDIR)/VertexDecoderArm64.cpp
++	      SOURCES_C += $(EXTDIR)/libpng17/arm/arm_init.c \
++			   $(EXTDIR)/libpng17/arm/filter_neon_intrinsics.c
+    else
+ 	ifneq (,$(findstring msvc,$(platform)))
+ 	ifeq (,$(findstring x64,$(platform)))

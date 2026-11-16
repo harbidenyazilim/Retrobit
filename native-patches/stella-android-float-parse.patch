@@ -1,0 +1,45 @@
+diff --git a/src/common/Variant.hxx b/src/common/Variant.hxx
+index 95b6abf55..3775bae7b 100644
+--- a/src/common/Variant.hxx
++++ b/src/common/Variant.hxx
+@@ -18,6 +18,8 @@
+ #ifndef VARIANT_HXX
+ #define VARIANT_HXX
+ 
++#include <cerrno>
++#include <cstdlib>
+ #include <optional>
+ #include <variant>
+ 
+@@ -209,10 +211,11 @@ class Variant
+ 
+           if constexpr(std::is_arithmetic_v<T>)  return FLT(v);
+           else if constexpr(std::is_convertible_v<T, string_view>) {
+-            float result{};
+-            auto sv = string_view(v);
+-            const auto [ptr, ec] = std::from_chars(sv.data(), sv.data() + sv.size(), result);
+-            return (ec == std::errc{}) ? result : 0.F;
++            const string value{string_view(v)};
++            char* end{};
++            errno = 0;
++            const float result = std::strtof(value.c_str(), &end);
++            return errno == 0 && end == value.c_str() + value.size() ? result : 0.F;
+           }
+           else
+             return 0.F;
+@@ -224,10 +227,11 @@ class Variant
+ 
+           if constexpr(std::is_arithmetic_v<T>)  return DBL(v);
+           else if constexpr(std::is_convertible_v<T, string_view>) {
+-            double result{};
+-            auto sv = string_view(v);
+-            auto [ptr, ec] = std::from_chars(sv.data(), sv.data() + sv.size(), result);
+-            return (ec == std::errc{}) ? result : 0.0;
++            const string value{string_view(v)};
++            char* end{};
++            errno = 0;
++            const double result = std::strtod(value.c_str(), &end);
++            return errno == 0 && end == value.c_str() + value.size() ? result : 0.0;
+           }
+           else
+             return 0.0;

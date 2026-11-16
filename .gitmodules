@@ -1,0 +1,33 @@
+[submodule "native-sources/picodrive"]
+	path = native-sources/picodrive
+	url = https://github.com/libretro/picodrive.git
+[submodule "native-sources/fceumm"]
+	path = native-sources/fceumm
+	url = https://github.com/libretro/libretro-fceumm.git
+[submodule "native-sources/bsnes-mercury"]
+	path = native-sources/bsnes-mercury
+	url = https://github.com/libretro/bsnes-mercury.git
+[submodule "native-sources/mupen64plus-next"]
+	path = native-sources/mupen64plus-next
+	url = https://github.com/libretro/mupen64plus-libretro-nx.git
+[submodule "native-sources/gambatte"]
+	path = native-sources/gambatte
+	url = https://github.com/libretro/gambatte-libretro.git
+[submodule "native-sources/mgba"]
+	path = native-sources/mgba
+	url = https://github.com/mgba-emu/mgba.git
+[submodule "native-sources/melonds"]
+	path = native-sources/melonds
+	url = https://github.com/libretro/melonDS.git
+[submodule "native-sources/gearsystem"]
+	path = native-sources/gearsystem
+	url = https://github.com/drhelius/Gearsystem.git
+[submodule "native-sources/pcsx-rearmed"]
+	path = native-sources/pcsx-rearmed
+	url = https://github.com/libretro/pcsx_rearmed.git
+[submodule "native-sources/ppsspp"]
+	path = native-sources/ppsspp
+	url = https://github.com/hrydgard/ppsspp.git
+[submodule "native-sources/stella"]
+	path = native-sources/stella
+	url = https://github.com/stella-emu/stella.git

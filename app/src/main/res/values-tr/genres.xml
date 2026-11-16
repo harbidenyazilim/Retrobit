@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="game_genre_action_adventure">Aksiyon-macera</string>
+    <string name="game_genre_jrpg">Japon rol yapma</string>
+    <string name="game_genre_shoot_em_up">İlerlemeli nişancı</string>
+</resources>

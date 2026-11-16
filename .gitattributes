@@ -1,0 +1,3 @@
+native-patches/*.patch -whitespace
+app/src/main/assets/ppsspp/** -whitespace
+app/src/main/assets/licenses/** -whitespace

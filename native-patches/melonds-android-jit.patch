@@ -1,0 +1,13 @@
+diff --git a/Makefile.common b/Makefile.common
+index fb49ba8..e92ff70 100644
+--- a/Makefile.common
++++ b/Makefile.common
+@@ -124,7 +124,7 @@ ifeq ($(HAVE_NEON), 1)
+ # DEFINES += -DNEONGPU_ENABLED
+ endif
+ 
+-ifdef JIT_ARCH
++ifneq ($(strip $(JIT_ARCH)),)
+ SOURCES_CXX += $(MELON_DIR)/ARMJIT.cpp \
+                 $(MELON_DIR)/ARMJIT_Memory.cpp \
+                 $(MELON_DIR)/ARM_InstrInfo.cpp \

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="player_startup_prompt">Nasıl başlamak istersin? A onaylar; B iptal eder.</string>
+    <string name="player_startup_resume">Son ilerlemeden devam et</string>
+    <string name="player_startup_fresh">Yeni başlat (oyun içi kayıtları koru)</string>
+    <string name="player_startup_fresh_desc">Anlık durum yüklenmeden açılır. Pil / oyun içi kayıtlar (SRAM) ve tüm elle kayıt yuvaları korunur. Hiçbir kayıt silinmez.</string>
+    <string name="player_startup_empty">Devam edilebilecek anlık durum veya oyun içi kayıt yok.</string>
+    <string name="player_startup_restore_failed">Kayıtlı ilerleme yüklenemedi. Oyun durduruldu; kurtarma / oyun içi kayıtların üzerine yazılmayacak. Tekrar dene, yeni başlat veya iptal et. Oyun içi kayıt okunamıyorsa tekrar dene ya da iptal et.</string>
+    <string name="player_startup_retry">Kayıtlı ilerlemeyi tekrar dene</string>
+    <string name="player_gamepad_edit">Kontrolcü düzeni ve tuşlar</string>
+    <string name="player_gamepad_scope_hint">Taslağı düzenle, sonra kaydet. Ön tuş değişimleri Özel düzende; omuz tuşu değişimleri her düzende çalışır. Menüde A / B ve fiziksel menü kısayolları değişmez.</string>
+    <string name="player_gamepad_global_hint">Genel varsayılan tuşlar. Ön tuş değişimleri Özel düzende; L1 / R1 ve L2 / R2 değişimleri her düzende çalışır. Oyun ve konsol tercihleri önceliklidir.</string>
+    <string name="player_gamepad_swap_on">%1$s · değiştirildi</string>
+    <string name="player_gamepad_swap_off">%1$s · normal (değiştir)</string>
+    <string name="player_gamepad_reset_swaps">Tuş değişimlerini sıfırla</string>
+    <string name="player_gamepad_touch_hint">Dokunmatik tuşlar üzerlerinde yazan RetroPad tuşunu gönderir; fiziksel kontrolcü değişimleri dokunmatik tuşları etkilemez.</string>
+    <string name="player_gamepad_save">Tuşları kaydet</string>
+    <string name="player_gamepad_save_game">Bu oyun için kaydet</string>
+    <string name="player_gamepad_apply_console">Yalnızca BU konsolun tüm oyunlarına uygula: %1$s</string>
+    <string name="player_gamepad_save_failed">Kontrolcü ayarları kaydedilemedi. Taslağın korunuyor; tekrar dene veya iptal et.</string>
+</resources>
