@@ -7,7 +7,7 @@ Retrobit is an Android and Android TV frontend for organizing and running game f
 Requirements: Java 17, Android SDK 36, Android NDK 28.0.13004108, CMake 3.22.1, and Ninja.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/harbidenyazilim/Retrobit.git
 cd Retrobit
 git submodule update --init --jobs 4
 ./gradlew :app:assemblePlayDebug
@@ -25,7 +25,7 @@ See `docs/DEVELOPER.md` for architecture and detailed setup.
 
 ## Privacy
 
-The Turkish and English privacy policy is in `docs/PRIVACY_POLICY.md`. Retrobit has no ads, analytics, tracking SDK, developer account system, or developer-operated data server.
+The Turkish and English privacy policy is published at https://harbidenyazilim.github.io/Retrobit/ (source: `docs/PRIVACY_POLICY.md`). Retrobit has no ads, analytics, tracking SDK, developer account system, or developer-operated data server.
 
 ## License
 
